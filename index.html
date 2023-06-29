@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Houssem Yousfi Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			ul a {
+					font-weight: 800;
+					font-style: italic;
+				}
+
+			h2 a {
+				font-weight: 800;
+				font-style: italic;
+			}
+			h2 {
+				font-weight: 800;
+				font-style: italic;
+			}
+			/* CSS styles for the scroll-to-top button */
+			.scroll-to-top {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				background-color: #333;
+				color: #fff;
+				border: none;
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				font-size: 30px;
+				z-index: 999;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+
+			.scroll-to-top.show {
+				opacity: 1;
+			}
+
+			.scroll-to-top:hover {
+				background-color: #555;
+			}
+		</style>
+		<script>
+			window.addEventListener('load', function() {
+				document.body.classList.remove('is-preload');
+			});
+
+			// JavaScript function to scroll to the top of the page
+			function scrollToTop() {
+				window.scrollTo({
+					top: 0,
+					behavior: 'smooth'
+				});
+			}
+
+			// Show or hide the scroll-to-top button based on the scroll position
+			function toggleScrollButton() {
+				var scrollButton = document.getElementById('scrollButton');
+				if (window.pageYOffset > 100) {
+					scrollButton.classList.add('show');
+				} else {
+					scrollButton.classList.remove('show');
+				}
+			}
+
+			// Attach event listener to scroll event
+			window.addEventListener('scroll', toggleScrollButton);
+		</script>
+	</head>
+	<body class="is-preload">
+				<!-- Intro -->
+					<div id="intro">
+						<h1>My<br />
+						Portfolio</h1>
+						<p>A show case of my projects and my abilities.</p>
+						<ul class="actions">
+							<li><a href="#houssem" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">My Portfolio</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/hsmys96/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+							<li><a href="https://www.facebook.com/houssem.ysf/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/houssem.ys/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/HoussemYs" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2 id="houssem"><a>Houssem Yousfi<br />
+										</a></h2>
+										<h3><a >Software Developer</a></h3>
+										<div style="text-align: center;">
+											<a class="image main"><img src="images/houssem2.jpg" alt="" style="max-width: 400px;" /></a>
+										  </div>
+									<p id="introduction">As a graduate in Information Systems Development, I'm constantly looking for new opportunities to apply my skills and knowledge in the field of web development. I have acquired a solid understanding of commonly used languages and technologies such as HTML, CSS, JavaScript, Spring Boot, Angular, PHP, Python, ..., as well as web development frameworks.<br />
+										In addition to my technical skills, I also have a good knowledge of project management and agile methodologies. I've learned to work as part of a team, communicate effectively and meet deadlines.<br />
+										I'm passionate about solving problems and creating innovative solutions to meet user needs. I'm ready to take on new challenges and adapt quickly to new technologies and emerging trends.<br />
+										I'm open to internship or entry-level job opportunities in the web development industry. I look forward to working with experienced professionals and learning new skills while making a significant contribution to real-world projects.</p>
+								</header>
+								
+								<ul class="actions special">
+									<li><a href="#contact" class="button large">Contact Me</a></li>
+								</ul>
+							</article>
+
+						<!-- Projects -->
+						<header id="projects" name="projects" style="text-align: center;">
+							<h2>Projects</h2>
+						  </header>
+							<section class="posts">
+								
+								<article> 
+									<header>
+										<span class="date">February 15, 2023</span>
+										<h2><a >Website : <br />
+											Beauty Clinic Center Turkey</a></h2>
+									</header>
+									<a  class="image fit"><img src="images/beautycliniccenter.png" alt="" /></a>
+									<p>Our Beauty Clinic Management Web Application brings efficiency, organization, and enhanced customer experience to your beauty clinic center. By automating appointment management, optimizing employee schedules, and facilitating service cataloging, the application empowers you to focus on delivering exceptional beauty services. With its robust technology stack, the application ensures reliability, scalability, and seamless integration with your existing systems.</p>
+									<ul><em><strong>Technology:</strong></em></a>
+										<li>Angular Js</li>
+										<li>Spring Boot</li>
+										<li>MySQL</li>
+									</ul>
+									<ul class="actions special">
+										<!-- <li><a href="#" class="button">Full Story</a></li> -->
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Juin 21, 2023</span>
+										<h2><a >Web Application : <br />
+										Configuration Management System</a></h2>
+									</header>
+									<a class="image fit"><img src="images/pfe.png" alt="" /></a>
+									<p>Our Configuration Management System empowers organizations to efficiently manage authorizations, roles, permissions, users, configurations, versioning, and log traceability. By providing a centralized platform, the application ensures data consistency, security, and compliance. With its user-friendly interface, seamless integration of technologies, and comprehensive features, the system streamlines configuration management processes, enhances collaboration, and improves overall productivity.</p>
+									<ul><em><strong>Technology:</strong></em></a>
+										<li>React Js</li>
+										<li>Flask</li>
+										<li>PostgreSQL</li>
+										<li>Swagger Documentation</li>
+									</ul>
+									<ul class="actions special">
+										<!-- <li><a href="#" class="button">Full Story</a></li> -->
+									</ul>
+								</article>
+								
+							</section>
+
+
+							<header style="text-align: center;">
+								<h2><a>Technical Abilities</a></h2>
+							  </header>
+							<section class="skills">
+								
+								<div class="skills-grid">
+								  <ul class="column-left">
+									<li>Proficiency in programming languages (Java, Python, JavaScript).</li>
+									<li>Familiarity with web development technologies (e.g., HTML, CSS, JavaScript frameworks).</li>
+									<li>Knowledge of databases and query languages (SQL, MySQL, PostgreSQL).</li>
+									<li>Experience with version control systems (Git).</li>
+								  </ul>
+								  <ul class="column-right">
+									<li>Understanding of software development methodologies (e.g., Agile, Scrum).</li>
+									<li>Familiarity with software testing and debugging techniques.</li>
+									<li>Knowledge of software architecture and design patterns.</li>
+									<li>Experience with development tools and IDEs (Visual Studio Code).</li>
+								  </ul>
+								</div>
+							  </section>
+							  
+
+
+							  <header style="text-align: center;">
+								<h2><a >Analytical and Problem-Solving Abilities</a></h2>
+							  </header>
+							<section class="skills">
+								
+								<div class="skills-grid">
+								  <ul class="column-left">
+									<li>Ability to analyze complex problems and develop innovative solutions.</li>
+									<li>Strong logical and critical thinking skills.</li>
+									<li>Aptitude for breaking down problems into smaller, manageable parts.</li>
+								</ul>
+								  <ul class="column-right">
+									<li>Proficiency in troubleshooting and debugging software issues.</li>
+									<li>Ability to identify and address performance bottlenecks.</li>
+								  </ul>
+								</div>
+							  </section>
+
+
+
+							  <header style="text-align: center;">
+								<h2><a >Communication and Collaboration Abilities</a></h2>
+							  </header>
+							<section class="skills">
+								
+								<div class="skills-grid">
+								  <ul class="column-left">
+									<li>Ability to effectively explain technical concepts to non-technical stakeholders.</li>
+									<li>Active listening and understanding of client requirements.</li>
+								  </ul>
+								  <ul class="column-right">
+									<li>Collaboration skills to work effectively in a team environment.</li>
+									<li>Capacity to provide constructive feedback and receive input from others.</li>
+								  </ul>
+								</div>
+							  </section>
+
+
+
+							  <header style="text-align: center;">
+								<h2><a >Adaptability and Learning Abilities</a></h2>
+							  </header>
+							<section class="skills">
+								
+								<div class="skills-grid">
+								  <ul class="column-left">
+									<li>Willingness to learn and keep up with emerging technologies and trends.</li>
+									<li>Ability to quickly grasp new programming languages, frameworks, and tools.</li>
+								  </ul>
+								  <ul class="column-right">
+									<li>Openness to exploring different software development paradigms.</li>
+									<li>Ability to adapt to changing project requirements and priorities.</li>
+								  </ul>
+								</div>
+							  </section>
+							  
+
+
+
+							  <header style="text-align: center;">
+								<h2><a>Time Management and Organization Abilities</a></h2>
+							  </header>
+							<section class="skills">
+								
+								<div class="skills-grid">
+								  <ul class="column-left">
+									<li>Strong organizational skills to manage multiple tasks and projects.</li>
+									<li>Effective prioritization and time management to meet deadlines.</li>
+								  </ul>
+								  <ul class="column-right">
+									<li>Attention to detail to ensure accuracy and quality in coding and documentation.</li>
+								  </ul>
+								</div>
+							  </section>
+
+
+
+
+							  
+							  <header style="text-align: center;">
+								<h2><a >Continuous Improvement and Professional Growth</a></h2>
+							  </header>
+							<section class="skills">
+								
+								<div class="skills-grid">
+								  <ul class="column-left">
+									<li>Proactive attitude towards continuous learning and professional development.</li>
+									<li>Participation in developer communities, forums, and conferences.</li>
+								  </ul>
+								  <ul class="column-right">
+									<li>Contribution to open-source projects or personal coding projects.</li>
+									<li>Stay up-to-date with industry best practices and emerging technologies.</li>
+								  </ul>
+								</div>
+							  </section>
+							  
+
+
+						<!-- Footer -->
+						
+						<section id="contact">
+							<header style="text-align: center;">
+								<h2><a>Feel Free To Contact Me</a></h2>
+								<i class="contact-icon fas fa-envelope"></i>
+							  </header>
+						</section>
+					</div>
+					
+						<!-- Scroll to Top Button -->
+				<button id="scrollButton" class="scroll-to-top" onclick="scrollToTop()">⬆️</button>
+
+					
+
+					
+					<!-- Footer -->
+						<footer id="footer">
+							<section class="split contact">
+								<section class="alt">
+									<h3>Address</h3>
+									<p>Dar Chaâbane el Fehri 8075,<br />
+										Nabeul, Tunisia</p>
+								</section>
+								<section>
+									<h3>Phone</h3>
+									<p><a>(+216) 54 284 346</a></p>
+								</section>
+								<section>
+									<h3>Email</h3>
+									<p><a>houssem.ysf96@gmail.com</a></p>
+								</section>
+								<section>
+									<h3>Social</h3>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/hsmys96/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+										<li><a href="https://www.facebook.com/houssem.ysf/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.instagram.com/houssem.ys/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://github.com/HoussemYs" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+								</section>
+							</section>
+						</footer>
+	
+					<!-- Copyright -->
+						<div id="copyright">
+							<ul><li>&copy; Houssem Yousfi</li></ul>
+						</div>
+	
+				</div>
+	
+				<script>
+					// Show or hide the scroll-to-top button on page load
+					document.addEventListener("DOMContentLoaded", function() {
+						toggleScrollButton();
+					});
+				</script>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<style>
+	.contact-icon {
+        font-size: 48px; /* Adjust the size of the icon */
+        color: #000000; /* Adjust the color of the icon */
+      }
+
+	.skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px; /* Adjust the spacing between grid items */
+      }
+
+      .skills-grid ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .skills-grid ul li {
+        margin-bottom: 10px;
+      }
+
+      .skills-grid ul li:before {
+        content: "•"; /* Use any bullet character or content you prefer */
+        display: inline-block;
+        margin-right: 5px; /* Adjust the spacing between the bullet and the text */
+      }
+
+	.column-left,
+	.column-right {
+	  flex: 1;
+	  list-style: none;
+	}
+  
+	.column-left {
+	  margin-right: 20px; /* Adjust the spacing between columns */
+	}
+.image.main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	  
+	.image.main img {
+		max-width: 400px;
+	  }
+  </style>
+  
